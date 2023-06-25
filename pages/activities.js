@@ -1,11 +1,7 @@
-import TestCom from "@/components/TestCom";
+import ActivityCom from "@/components/ActivityCom";
 import Head from "next/head";
-import Image from "next/image";
 
 const activities = () => {
-
-    const ratio = 450;
-
     const activityDetails = [
         {
             projName: "Project Indianisation",
@@ -64,7 +60,7 @@ const activities = () => {
                     Our Activities:
                 </h3>
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-8 lg:w-full mt-10">
-                    {activityDetails.map((e, i) => <TestCom key={i} element={e} />)}
+                    {activityDetails.map((e, i) => <ActivityCom key={i} element={e} />)}
                 </div>
             </div>
             {/* <!-- Activities --> */}
