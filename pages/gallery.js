@@ -36,23 +36,8 @@ const gallery = () => {
                                     <div key={i}>
                                         <div className="flex relative h-[400px]" >
                                             <Image alt="gallery" priority={e == 2 ? true : false}
-                                                className="absolute inset-0 w-full h-full object-cover object-center shadow-xl hover:shadow-gray-600 hover:rounded-2xl lg:hover:scale-110 duration-300 ease-in-out"
+                                                className="absolute inset-0 w-full h-full object-cover object-center shadow-lg hover:shadow-gray-600 hover:rounded-2xl duration-300 ease-in-out"
                                                 src={`/gallery_photos/${e}.${e != 20 ? 'jpeg' : 'jpg'}`} width={ratio} height={ratio} />
-                                            {/* <div
-                                            className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 duration-300 ease-in-out overflow-scroll">
-                                            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE
-                                            </h2>
-                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                                            <p className="leading-relaxed">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deserunt, quidem itaque
-                                                ratione tempore laudantium eum impedit sunt velit quia at maxime sed facere qui
-                                                voluptatibus commodi delectus laborum? Beatae repudiandae voluptatum possimus odit eum
-                                                quibusdam, necessitatibus aspernatur commodi ab suscipit veniam magni debitis alias
-                                                officiis modi sunt perferendis veritatis laudantium impedit a sit! Natus vitae nobis
-                                                saepe vero debitis quo voluptatum quam accusamus quod commodi, sequi perspiciatis
-                                                repellat ex iure esse suscipit quasi? Numquam!
-                                            </p>
-                                        </div> */}
                                         </div>
                                     </div>
                                 );

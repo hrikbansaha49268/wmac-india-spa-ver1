@@ -1,3 +1,4 @@
+import TestCom from "@/components/TestCom";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -62,26 +63,8 @@ const activities = () => {
                 <h3 className="text-5xl font-bold mb-6 text-gray-800">
                     Our Activities:
                 </h3>
-                <div className="grid lg:grid-cols-3 grid-cols-1 lg:w-full mt-10">
-                    {activityDetails.map((e, i) => {
-                        return (
-                            <div className="flex justify-center lg:my-0 my-4" key={i}>
-                                <div className={`lg:max-w-sm md:max-w-sm rounded-lg ${e.bgColor} shadow-xl hover:shadow-2xl duration-300 ease-in-out`}>
-                                    <a href="#!">
-                                        <Image className="rounded-t-lg" src={`/activities/projects/images/${e.imgSrc}`} alt="" width={ratio} height={ratio} />
-                                    </a>
-                                    <div className="p-6">
-                                        <h5 className={`mb-8 mt-2 lg:text-5xl text-3xl font-bold leading-snug tracking-wide ${e.txtColor}`}>
-                                            {e.projName}
-                                        </h5>
-                                        <p className={`mb-4 text-base ${e.txtColor}`}>
-                                            {e.desc}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
+                <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-4 lg:w-full mt-10">
+                    {activityDetails.map((e, i) => <TestCom key={i} element={e} />)}
                 </div>
             </div>
             {/* <!-- Activities --> */}

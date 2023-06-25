@@ -164,7 +164,7 @@ const about = () => {
                 <section className="lg:my-20 lg:mx-44 m-5 md:m-10 text-gray-700">
                     {/* <!-- Shihan Dai Koustav Sarkar --> */}
                     <div className="flex flex-row justify-center">
-                        <div className="block rounded-lg shadow-2xl lg:hover:shadow-[#FFD700] cursor-pointer lg:w-[70%] md:w- bg-white duration-300">
+                        <div className="block rounded-lg shadow-md lg:hover:shadow-[#FFD700] cursor-pointer lg:w-[70%] md:w- bg-white duration-300">
                             <div className="overflow-hidden rounded-t-lg h-28" style={{ backgroundColor: '#3185fc' }}></div>
                             <div
                                 className="lg:w-[20rem] w-64 -mt-12 overflow-hidden border-4 border-white rounded-full mx-auto bg-white">

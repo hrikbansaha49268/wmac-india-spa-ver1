@@ -3,7 +3,7 @@ import Image from "next/image";
 const MemberCom = ({ objPos, imgUrl, memName, memPost, useColor }) => {
     return (
         <div>
-            <div className={`block rounded-lg shadow-2xl hover:shadow-gray-500 hover:scale-110 cursor-pointer bg-white duration-150 ease-in-out`}>
+            <div className={`block rounded-lg shadow-lg hover:shadow-gray-500 hover:scale-105 cursor-pointer bg-white duration-150 ease-in-out`}>
                 <div className="overflow-hidden rounded-t-lg h-28" style={{ backgroundColor: useColor }}></div>
                 <div className="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
                     <Image src={`/members_photos/${imgUrl}`}
