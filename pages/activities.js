@@ -63,7 +63,7 @@ const activities = () => {
                 <h3 className="text-5xl font-bold mb-6 text-gray-800">
                     Our Activities:
                 </h3>
-                <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-4 lg:w-full mt-10">
+                <div className="grid lg:grid-cols-3 grid-cols-1 gap-x-8 lg:w-full mt-10">
                     {activityDetails.map((e, i) => <TestCom key={i} element={e} />)}
                 </div>
             </div>
